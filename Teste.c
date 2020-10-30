@@ -1,0 +1,81 @@
+#include <16F877A.h>
+#use delay(clock=48000000)
+#byte portb=0xF80
+#byte portc=0xF81
+
+void main()
+{
+   while (true)
+   {
+      output_high (pin_b0);
+      output_high (pin_b2);
+      output_high (pin_b4);
+      output_high (pin_b7);
+      output_high (pin_c1);
+      delay_ms (2000);
+      output_low (pin_b0);
+      output_low (pin_b2);
+      output_low (pin_b4);
+      output_low (pin_b7);
+      output_low (pin_c1);
+      delay_ms (500);
+      output_high (pin_b0);
+      output_high (pin_b2);
+      output_high (pin_b4);
+      output_high (pin_b7);
+      output_high (pin_c1);
+      delay_ms (500);
+      output_low (pin_b0);
+      output_low (pin_b2);
+      output_low (pin_b4);
+      output_low (pin_b7);
+      output_low (pin_c1);
+      delay_ms (500);
+      output_high (pin_b0);
+      output_high (pin_b2);
+      output_high (pin_b4);
+      output_high (pin_b7);
+      output_high (pin_c1);
+      delay_ms (500);
+      output_low (pin_b0);
+      output_low (pin_b2);
+      output_low (pin_b4);
+      output_low (pin_b7);
+      output_low (pin_c1);
+      output_high (pin_b1);
+      output_high (pin_b3);
+      output_high (pin_b6);
+      output_high (pin_c0);
+      output_high (pin_c2);
+      delay_ms (2000);
+      output_low (pin_b1);
+      output_low (pin_b3);
+      output_low (pin_b6);
+      output_low (pin_c0);
+      output_low (pin_c2);
+      delay_ms (500);
+      output_high (pin_b1);
+      output_high (pin_b3);
+      output_high (pin_b6);
+      output_high (pin_c0);
+      output_high (pin_c2);
+      delay_ms (500);
+      output_low (pin_b1);
+      output_low (pin_b3);
+      output_low (pin_b6);
+      output_low (pin_c0);
+      output_low (pin_c2);
+      delay_ms (500);
+      output_high (pin_b1);
+      output_high (pin_b3);
+      output_high (pin_b6);
+      output_high (pin_c0);
+      output_high (pin_c2);
+      delay_ms (500);
+      output_low (pin_b1);
+      output_low (pin_b3);
+      output_low (pin_b6);
+      output_low (pin_c0);
+      output_low (pin_c2);
+   }
+}
